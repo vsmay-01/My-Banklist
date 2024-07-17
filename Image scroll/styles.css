@@ -1,0 +1,40 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 200vh; /* Make the container tall enough to allow scrolling */
+}
+
+.image-section {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 40%; /* Adjust the width as needed */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0; /* Optional background color */
+}
+
+.image-section img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.text-section {
+  margin-left: 40%; /* Same as the width of the image section */
+  width: 60%; /* Remaining width */
+  padding: 20px;
+}
+
+.text-content {
+  height: 100%;
+  overflow-y: auto;
+}
